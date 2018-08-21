@@ -1,0 +1,13 @@
+- hosts: localhost
+  
+  tasks:
+  - name: Configure /boot/config.txt
+    lineinfile:  
+      dest: /boot/config.txt
+      regexp: '^display_rotate=' 
+      line: 'display_rotate={{view}}'
+
+  - name: Configure xorg
+    copy:
+      dest: /usr/share/X11/xorg.conf.d/98-screen-calibration.conf
+      src: xorg/{{view}}_98-screen-calibration.conf

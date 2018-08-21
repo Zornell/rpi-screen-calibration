@@ -1,0 +1,3 @@
+#/usr/bin/env bash
+
+cd ~/repos/rpi-config && sudo ansible-playbook touchscreen.yml --extra-vars "view=$1" -v && sudo reboot
