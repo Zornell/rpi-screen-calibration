@@ -28,7 +28,7 @@ matches your touchscreen. You can list all input devices with
 `xinput list`.
 
 The rotate script is a wrapper for the ansible playbook. It takes one argument
-which is the number of 90 degree turns the display will be rotatet (counter-clockwise).
+which is the number of 90 degree turns the display will be rotated (counter-clockwise).
 
 ## Further reading
 
